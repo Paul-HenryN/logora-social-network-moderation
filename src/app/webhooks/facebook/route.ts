@@ -13,7 +13,7 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  console.log(request);
+  console.log(request.body);
 
   return new Response("success", { status: 200 });
 }
