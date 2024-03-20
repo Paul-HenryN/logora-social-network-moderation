@@ -1,3 +1,5 @@
+let received: any = [];
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
@@ -14,6 +16,10 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   console.log(request.body);
-
+  received = request.body;
   return new Response("success", { status: 200 });
+}
+
+export async function PUT(request: Request) {
+  return new Response(received);
 }
