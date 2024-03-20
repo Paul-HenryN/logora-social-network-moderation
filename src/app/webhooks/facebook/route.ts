@@ -8,7 +8,10 @@ export async function GET(request: Request) {
   const verifyToken = searchParams.get("hub.verify_token");
 
   if (mode === "subscribe" && verifyToken === "logora") {
-    return new Response(challenge);
+    return new Response(challenge, {
+      status: 200,
+      headers: { "Content-Type": "text/html" },
+    });
   }
 
   return new Response("error", { status: 400 });

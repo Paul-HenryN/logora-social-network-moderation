@@ -29,6 +29,8 @@ export default function Dashboard() {
         setComments(data);
       }
     );
+
+    FB.api("/app/subscriptions", console.log);
   }, []);
 
   const handleReject = (commentId: string) => {
