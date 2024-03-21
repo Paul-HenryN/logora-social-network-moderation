@@ -21,7 +21,10 @@ export default function Home() {
           setUser(user);
         });
       },
-      { scope: "pages_read_engagement,pages_read_user_content" }
+      {
+        scope:
+          "pages_read_engagement,pages_read_user_content,pages_manage_metadata,pages_show_list",
+      }
     );
   };
 
