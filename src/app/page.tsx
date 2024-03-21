@@ -23,7 +23,7 @@ export default function Home() {
       },
       {
         scope:
-          "pages_read_engagement,pages_read_user_content,pages_manage_metadata,pages_show_list",
+          "manage_pages,pages_read_engagement,pages_read_user_content,pages_manage_metadata,pages_show_list",
       }
     );
   };

@@ -30,7 +30,37 @@ export default function Dashboard() {
       }
     );
 
-    FB.api("/app/subscriptions", console.log);
+    // FB.api(
+    //   "/oauth/access_token",
+    //   {
+    //     client_id: "327557316974267",
+    //     client_secret: "8d2494859c0e5660f96d36fe41e12128",
+    //     grant_type: "client_credentials",
+    //   },
+    //   console.log
+    // );
+
+    FB.api(
+      "/327557316974267/subscriptions",
+      "post",
+      {
+        object: "page",
+        callback_url:
+          "https://logora-social-network-moderation.vercel.app/webhooks/facebook",
+        verify_token: "logora",
+        fields: "feed",
+        access_token: "327557316974267|KupjlxNNj_2VotiOlwFLY7WvIbg",
+      },
+      console.log
+    );
+
+    FB.api(
+      "/327557316974267/subscriptions",
+      {
+        access_token: "327557316974267|KupjlxNNj_2VotiOlwFLY7WvIbg",
+      },
+      console.log
+    );
   }, []);
 
   const handleReject = (commentId: string) => {
