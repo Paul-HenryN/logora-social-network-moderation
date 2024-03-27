@@ -24,7 +24,7 @@ export default function Dashboard() {
       {
         access_token:
           "EAAEp6WGFlrsBOZCXjecZAFdlxUs6ZANv2jshbJRmGt5HbSXIhFz4BVOJ9MzqOGf6M941gn5m9MuXSEwUxfFD2Fpti2rgCwpc2SOF0qXdq9eh60ZBbNMhuGBcNoqCTDAGRZC2ZCAmkeZAJVGUIFGmnkGV8M5NqzONvtgZCh0omBN0zfNsqYq96rPG4JeZAHVHIztziijapSC4ZD",
-      },0
+      },
       ({ data }: { data: FacebookPagePostComment[] }) => {
         setComments(data);
       }
