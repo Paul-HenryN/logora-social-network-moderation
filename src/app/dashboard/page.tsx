@@ -24,7 +24,7 @@ export default function Dashboard() {
       {
         access_token:
           "EAAEp6WGFlrsBOZCXjecZAFdlxUs6ZANv2jshbJRmGt5HbSXIhFz4BVOJ9MzqOGf6M941gn5m9MuXSEwUxfFD2Fpti2rgCwpc2SOF0qXdq9eh60ZBbNMhuGBcNoqCTDAGRZC2ZCAmkeZAJVGUIFGmnkGV8M5NqzONvtgZCh0omBN0zfNsqYq96rPG4JeZAHVHIztziijapSC4ZD",
-      },
+      },0
       ({ data }: { data: FacebookPagePostComment[] }) => {
         setComments(data);
       }
@@ -54,13 +54,13 @@ export default function Dashboard() {
       console.log
     );
 
-    FB.api(
-      "/327557316974267/subscriptions",
-      {
-        access_token: "327557316974267|KupjlxNNj_2VotiOlwFLY7WvIbg",
-      },
-      console.log
-    );
+    // FB.api(
+    //   "/327557316974267/subscriptions",
+    //   {
+    //     access_token: "327557316974267|KupjlxNNj_2VotiOlwFLY7WvIbg",
+    //   },
+    //   console.log
+    // );
   }, []);
 
   const handleReject = (commentId: string) => {
