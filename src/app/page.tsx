@@ -30,7 +30,7 @@ export default function Home() {
 
   useEffect(() => {
     FB.init({
-      appId: "327557316974267",
+      appId: "3733333870253662",
       version: "v19.0",
       xfbml: true,
     });
